@@ -1,0 +1,66 @@
+// Element Plus 颜色变量 - CSS Custom Properties
+:root {
+  // 主色调
+  --el-color-primary-light: #1a1a1a; /* 纯黑，用于最重要的文本 */
+  --el-color-primary-light-card-bg: #f8f9faff; /* 次级背景/边框 */
+  --el-color-primary-light-1: #666666; /* 辅助文字 */
+  --el-color-primary-light-2: #999999; /* 次要文字 */
+  --el-color-primary-light-3: #ced4daff; /* 按钮 active */
+  --el-color-primary-light-4: #dee2e6ff; /* 按钮 hover */
+  --el-color-primary-white: #ffffff; /* 白色，卡片/对比文字 */
+
+  // 功能色
+  --el-color-success: #67c23a;
+  --el-color-success-light-3: rgb(151, 212, 115);
+  --el-color-success-light-5: rgb(177, 226, 151);
+  --el-color-success-light-7: rgb(204, 240, 187);
+  --el-color-success-light-8: rgb(217, 246, 204);
+  --el-color-success-light-9: rgb(230, 251, 221);
+
+  --el-color-warning: #e6a23c;
+  --el-color-warning-light-3: rgb(237, 184, 115);
+  --el-color-warning-light-5: rgb(242, 201, 151);
+  --el-color-warning-light-7: rgb(247, 219, 187);
+  --el-color-warning-light-8: rgb(250, 228, 204);
+  --el-color-warning-light-9: rgb(252, 237, 221);
+
+  --el-color-danger: #f56c6c;
+  --el-color-danger-light-3: rgb(248, 133, 133);
+  --el-color-danger-light-5: rgb(250, 159, 159);
+  --el-color-danger-light-7: rgb(252, 185, 185);
+  --el-color-danger-light-8: rgb(253, 198, 198);
+  --el-color-danger-light-9: rgb(254, 211, 211);
+
+  --el-color-info: #909399;
+  --el-color-info-light-3: rgb(167, 171, 178);
+  --el-color-info-light-5: rgb(188, 191, 196);
+  --el-color-info-light-7: rgb(209, 211, 214);
+  --el-color-info-light-8: rgb(220, 221, 223);
+  --el-color-info-light-9: rgb(230, 231, 232);
+
+  // 文字颜色
+  --el-text-color-primary: #303133;
+  --el-text-color-regular: #606266;
+  --el-text-color-secondary: #909399;
+  --el-text-color-placeholder: #a8abb2;
+  --el-text-color-disabled: #c0c4cc;
+
+  // 边框颜色
+  --el-border-color: #dcdfe6;
+  --el-border-color-light: #e4e7ed;
+  --el-border-color-lighter: #ebeef5;
+  --el-border-color-extra-light: #f2f6fc;
+  --el-border-color-dark: #d4d7de;
+  --el-border-color-darker: #cdd0d6;
+
+  // 背景颜色
+  --el-bg-color: #ffffff;
+  --el-bg-color-page: #f2f3f5;
+  --el-bg-color-overlay: #ffffff;
+
+  // 过渡动画
+  --el-transition-duration: 0.4s;
+  --el-transition-duration-fast: 0.3s;
+}
+
+
