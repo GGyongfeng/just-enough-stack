@@ -10,18 +10,7 @@
 ```bash
 git clone https://github.com/GGyongfeng/just-enough-stack.git
 cd just-enough-stack
-```
-
-### 一键启动
-
-**macOS / Linux:**
-```bash
-./start-dev.sh
-```
-
-**Windows:**
-```bash
-start-dev.bat
+python start-dev.py
 ```
 
 脚本会自动：
