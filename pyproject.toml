@@ -1,0 +1,54 @@
+[project]
+name = "je-stack"
+version = "0.1.1"
+description = "Just Enough Stack - A lightweight FastAPI framework with authentication, permissions and CRUD utilities"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Yongfeng Gu", email = "yongfenggu@tju.edu.cn"}
+]
+keywords = ["fastapi", "framework", "crud", "authentication", "sqlalchemy"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: FastAPI",
+]
+dependencies = [
+    # je_stack 核心框架必需依赖
+    "loguru>=0.7.3",          
+    "pydantic>=2.11.7",       
+    "sqlalchemy>=2.0.42",      
+    "fastapi>=0.104.1",       
+    "passlib[bcrypt]>=1.7.4",  
+    "pyjwt>=2.10.1",           
+]
+
+[project.optional-dependencies]
+dev = [
+    # 开发工具
+    "pytest>=8.4.1",           # 测试框架
+]
+
+examples = [
+    # 只有运行 app/ 示例应用才需要的额外依赖
+    "uvicorn>=0.24.0",         # ASGI 服务器 (运行 app/main.py)
+    "alembic>=1.16.5",         # 数据库迁移 (app/alembic/, app/migrate.py)
+    "python-multipart>=0.0.6", # 文件上传 (如果 app 用到)
+    "httpx>=0.28.1",           # HTTP 客户端
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/just-enough-stack"
+Repository = "https://github.com/yourusername/just-enough-stack"
+Documentation = "https://github.com/yourusername/just-enough-stack#readme"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["je_stack"]
