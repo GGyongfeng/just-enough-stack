@@ -44,7 +44,7 @@ def check_command(command, install_url):
                 else result.stderr.split("\n")[0]
             )
             print(f"✅ {command} 已安装: {version}")
-        except:
+        except (subprocess.TimeoutExpired, subprocess.CalledProcessError, Exception):
             print(f"✅ {command} 已安装")
         return True
     except (subprocess.CalledProcessError, FileNotFoundError):
