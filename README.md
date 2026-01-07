@@ -4,7 +4,46 @@
 
 基于 **FastAPI + Vue3 + SQLite**，提供完整的用户认证、权限管理和 CRUD 示例。
 
-## 快速开始
+## ⚡ 快速开始
+
+### 克隆仓库
+```bash
+git clone https://github.com/GGyongfeng/just-enough-stack.git
+cd just-enough-stack
+```
+
+### 一键启动
+
+**macOS / Linux:**
+```bash
+./start-dev.sh
+```
+
+**Windows:**
+```bash
+start-dev.bat
+```
+
+脚本会自动：
+- ✅ 检查依赖工具（Python, Node.js, npm, uv）
+- ✅ 安装后端和前端依赖
+- ✅ 启动后端和前端服务
+- ✅ 自动打开浏览器访问 http://localhost:3000
+
+### 环境要求
+- Python 3.12+
+- Node.js 18+
+- npm 或 yarn
+- [uv](https://astral.sh/uv) - Python 包管理工具
+
+**安装 uv:**
+```bash
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Windows
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
 
 ## 技术栈
 
@@ -38,46 +77,28 @@
 - ✅ 自动 API 文档（Swagger）
 - 🚧 OpenAPI → TypeScript 类型自动生成（重构后）
 
-## 快速开始
+### 手动启动（可选）
 
-### 环境要求
-- Python 3.12+
-- Node.js 18+
-- [uv](https://github.com/astral-sh/uv) (推荐)
-
-### 一键启动
-```bash
-./start-dev.sh
-```
-
-或分别启动：
+如果不使用启动脚本，可以分别启动：
 
 **后端：**
 ```bash
-cd backend
+cd app
 uv sync
 uv run uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 **前端：**
 ```bash
-cd frontend
+cd web
 npm install
 npm run dev
 ```
 
-### 访问
-- 前端: http://localhost:5173
-- 后端 API: http://localhost:8000
-- API 文档: http://localhost:8000/docs
-
-### 环境变量
-创建 `backend/.env`：
-```env
-JWT_SECRET_KEY=your_secret_key
-USER_REGISTER_TOKEN=your_register_token
-DATABASE_URL=sqlite:///app.db
-```
+### 访问地址
+- 🌐 前端: http://localhost:3000
+- 🔌 后端 API: http://localhost:8000
+- 📚 API 文档: http://localhost:8000/docs
 
 ## 当前结构
 ```
